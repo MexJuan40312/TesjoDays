@@ -1,0 +1,454 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    
+}
+
+/* CABECERA - ESTILOS */
+.content{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 85, 212) 0%,
+        rgb(52, 120, 248) 70%
+    );
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.icon-tabler-school {
+    position: absolute;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+.DaysLite {
+    font-weight: 100;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #DEDEDE;
+    display: block;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover{
+    color: #fff;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:768px){
+    .content {
+        min-height: 70px;
+    }
+    .menu {
+        top: 0;
+        padding: 14px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+        90deg,
+        rgb(0, 60, 151) 0%,
+        rgb(69, 134, 255) 70%
+    );
+    display: none;
+    z-index: 1000;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+/* Contenedor principal */
+.container-principal {
+    position: relative;
+}
+
+/* Imagen principal*/
+.ImgPrinc {
+    width: 100%;
+    max-width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.Texto {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Texto {
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 100px;
+}
+.Contrl {
+    font-size: 45px; 
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.Contrl2 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}
+@media(max-width:768px){
+    .Texto {
+        padding: 20px;
+        top: 50%;
+        transform: translateY(-30%);
+        font-size: 10px; 
+    }
+    .ImgPrinc {
+        margin-bottom: 15px;
+    }
+    .Contrl {
+        font-size: 13px;
+    }
+    .Contrl2 {
+        padding-bottom: 5px;
+        font-size: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 15px;
+    }
+}
+@media(min-width:1000px){
+    .Texto {
+        padding: 20px;
+        top: 50%;
+        transform: translateY(-40%);
+        font-size: 10px; 
+    }
+    .ImgPrinc {
+        margin-bottom: 20px;
+    }
+    .Contrl {
+        padding-top: 30px;
+
+    }
+    .Contrl2 {
+        padding-top: 20px;
+        padding: 0 100px;
+    }
+}
+
+
+/* CONTENIDO PÁGINA WEB*/
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content1 {
+    flex: 1;
+}
+.icon-container {
+    cursor: pointer;
+    display: inline-block;
+}
+.icon-container:hover svg {
+    stroke: rgb(78, 243, 255);
+}
+.icon-container span {
+    margin-right: 10px;
+    color: black;
+}
+.consult2 {
+    margin-bottom: 15px;
+}
+
+/* DISEÑO TABLAS */
+.CajaTab {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    box-shadow: 0px 5px 15px 0px rgba(31,31,31,1);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.CajaTab table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.CajaTab th, .CajaTab td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+.CajaTab th {
+    background-color: #f2f2f2;
+}
+.buscador {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+.buscador input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.buscador button {
+    margin-left: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.buscador button:hover {
+    background-color: rgb(9, 169, 233);
+    color: #ffffff;
+}
+.buscador .titu {
+    margin-right: 10px;
+    padding-right: 470px;
+    color: #818181;
+}
+@media(max-width:1123px){
+    .CajaTab {
+        width: 100%;
+    }
+    .buscador {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    .buscador .titu {
+        margin-right: 10px;
+        padding-right: 0px;
+        padding-bottom: 35px;
+    }
+    .buscador input[type="text"],
+    .buscador button {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+    .CajaTab table caption {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .editDate {
+        padding-left: 0;
+    }
+    .editDate svg {
+        margin: 10px 0;
+    }
+    .CajaTab table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .CajaTab table td, .CajaTab table th {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .CajaTab table td:nth-child(odd),
+    .CajaTab table th:nth-child(odd) {
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .CajaTab table td:nth-child(even),
+    .CajaTab table th:nth-child(even) {
+        flex: 0 0 calc(50% - 5px);
+        margin-left: 10px;
+    }
+}
+
+
+
+/* Botones de las tablas con sus funciones */
+.editDate {
+    padding-left: 1110px;
+}
+.icon-tabler-trash {
+    margin-left: 10px;
+}
+.icon2 {
+    cursor: pointer;
+}
+@media(max-width:1123px){
+    .editDate {
+        padding-left: 160px;
+    }
+    .editDate svg {
+        margin: 10px 0;
+    }
+}
+
+
+/* Estilos de las ventanas de formularios*/
+.dialog-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.formInsert {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+
+}
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.closeDialogButton {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#closeDialogButton {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 35px;
+}
+.InserT, .btnCerrar1 {
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 120px;
+}
+.InserT,
+#closeDialogButton,
+#closeDeleteDialogButton {
+    transition: background-color 0.3s;
+}
+
+.InserT:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#closeDialogButton:hover,
+#closeDeleteDialogButton:hover {
+    background-color: #ff3300;
+    color: #fff;
+}
+.btnCerrar {
+    font-weight: bold;
+    padding-right: 60px;
+}
+.GetOutB {
+    padding-top: 40px;
+}
